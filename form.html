@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        input {
+            width: 200px;
+            margin: 5px;
+        }
+
+        .form {
+            border: 2px solid red;
+            width: 50%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* form{
+            width: 100%;
+
+        } */
+        .table {
+            border: 2px solid red;
+            width: 50%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 5px;
+        }
+        .sub-btn{
+            width: 50px;
+        }
+        img{
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="form">
+                <h2>Input Form</h2>
+                <form action="">
+                    <label for="">Name:</label><br>
+                    <input type="text"><br>
+                    <label for="">Phone:</label><br>
+                    <input type="tel"><br>
+                    <label for="">Address:</label><br>
+                    <input type="text"><br>
+                    <label for="">Image:</label><br>
+                    <input type="file"><br>
+                    <input class="sub-btn" type="submit">
+                </form>
+            </div>
+            <div class="table">
+                <h2>Display Table</h2>
+                <table>
+                    <tr>
+                        <th>Sr.</th>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="img/saif.jpg" alt=""></td>
+                        <td>Saif</td>
+                        <td>03028326844</td>
+                        <td>Sialkot</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="img/ahmad.jpg" alt=""></td>
+                        <td>Ahmad</td>
+                        <td>03000000000</td>
+                        <td>Sialkot</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
